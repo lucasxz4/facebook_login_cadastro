@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/media.css">
+</head>
+<body>
+    
+    <main>
+        <div class="left">
+            <div class="title">
+                <h1>Facebook</h1>
+            </div>
+            <div class="parag">
+                <p>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            </div>
+        </div>
+
+        <div class="right">
+            <form action="#" method="get">
+                <input type="email" name="email" id="iemail" placeholder="Email ou telefone" required autofocus>
+                <input type="password" name="senha" id="isenha" placeholder="Senha" required minlength="8">
+                <button type="submit" class="submit">Entrar</button>
+                <a href="#"class="esqueci">Esqueceu a senha?</a>
+                <div class="separation"></div>
+                <button class="creater">Criar nova conta</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        const esqueci = document.querySelector('.esqueci')
+            esqueci.addEventListener('click', function() {
+            Swal.fire({
+            title: 'Olá!',
+            text: 'Desculpe, essa página é só para estudos.',
+            icon: 'error',
+            confirmButtonText: 'Fechar'
+            })
+        })
+        const criar = document.querySelector('.creater')
+        criar.addEventListener('click', function(event) {
+            event.preventDefault()
+        })
+    </script>
+
+</body>
+</html>

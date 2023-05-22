@@ -1,0 +1,68 @@
+@media screen and (max-width: 950px) {
+    .parag p {
+        font-size: 22px;
+        width: 410px;
+    }
+
+    .left {
+        padding-right: 0;
+    }
+
+    .right {
+        width: 300px;
+    }
+
+    .submit {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .creater {
+        font-size: 16px;
+        width: 55%;
+        font-weight: 200;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6em;
+    }
+
+    .parag p {
+        font-size: 20px;
+    }
+
+    .parag {
+        text-align: justify;
+    }
+
+    .title {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .parag p {
+        font-size: 18px;
+        padding: 0px 8px;
+        width: 100%;
+    }
+
+    .submit {
+        font-size: 12px;
+        line-height: 40px;
+    }
+
+    .creater {
+        line-height: 35px;
+        font-size: 15px;
+    }
+}
